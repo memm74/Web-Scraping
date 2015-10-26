@@ -1,6 +1,12 @@
 setwd("~/GitHub/Web-Scraping")
+# first use: install.packages("rvest")
+# install.packages("magrittr")
+
 library(rvest)
-pencils <- html("source/Graphite Pencils | Cult Pens 2015-06-15.html")
+library(magrittr)
+
+# pencils <- html("source/Graphite Pencils | Cult Pens 2015-06-15.html")
+pencils <- html("pencilsample.html")
 
 # product names into vector pnames
 pnames <-
